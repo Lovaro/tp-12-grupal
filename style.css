@@ -8,6 +8,11 @@
 .container {
   margin-bottom: 12rem;
 }
+@media screen and (min-width: 1280px) {
+  .container {
+    margin: 6rem 6rem 12rem 6rem;
+  }
+}
 
 .card {
   border: none;
@@ -19,12 +24,24 @@
   align-items: center;
   flex-direction: column;
   text-align: center;
+  overflow: hidden;
+}
+@media screen and (min-width: 1280px) {
+  .card {
+    flex-direction: row-reverse;
+  }
 }
 .card .card__title {
   margin: 2rem 0;
 }
 .card .card__img {
   width: 70%;
+}
+@media screen and (min-width: 1280px) {
+  .card .card__img {
+    width: 50%;
+    padding: 3rem;
+  }
 }
 .card .card__text {
   color: #808d99;
@@ -38,6 +55,14 @@
   margin-bottom: 2rem;
   font-size: 1rem;
 }
+@media screen and (min-width: 1280px) {
+  .card--small {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 40%;
+  }
+}
 
 .hero {
   text-align: center;
@@ -46,8 +71,25 @@
   width: 70%;
   margin-top: 1rem;
 }
+@media screen and (min-width: 1280px) {
+  .hero .hero__ilustation {
+    width: 100%;
+  }
+}
 .hero .hero__text {
   margin: 2.5rem 0;
+}
+@media screen and (min-width: 1280px) {
+  .hero {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero .hero__info {
+    width: 60%;
+    text-align: left;
+    margin-right: 2rem;
+  }
 }
 
 .navbar {

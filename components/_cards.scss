@@ -1,5 +1,9 @@
 .container {
   margin-bottom: 12rem;
+
+  @media screen and (min-width: $xl) {
+    margin: 6rem 6rem 12rem 6rem;
+  }
 }
 .card {
   border: none;
@@ -11,6 +15,10 @@
   align-items: center;
   flex-direction: column;
   text-align: center;
+  overflow: hidden;
+  @media screen and (min-width: $xl) {
+    flex-direction: row-reverse;
+  }
 
   .card__title {
     margin: $sp2 0;
@@ -18,6 +26,11 @@
 
   .card__img {
     width: 70%;
+
+    @media screen and (min-width: $xl) {
+      width: 50%;
+      padding: $sp4;
+    }
   }
 
   .card__text {
@@ -31,6 +44,12 @@
     .card__title--small {
       margin-bottom: $sp2;
       font-size: 1rem;
+    }
+    @media screen and (min-width: $xl) {
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      width: 40%;
     }
   }
 }
