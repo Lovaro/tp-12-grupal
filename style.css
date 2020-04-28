@@ -25,6 +25,15 @@
 .card .card__text {
   color: #808d99;
 }
+.card--small {
+  margin-top: -120px;
+  background-color: white;
+  color: black;
+}
+.card--small .card__title--small {
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
 
 .hero {
   text-align: center;
@@ -62,31 +71,20 @@
   font-weight: 900;
 }
 
-.up {
-  border: none;
-  border-radius: 15px;
-  box-shadow: 5px 5px 10px -1px rgba(0, 0, 0, 0.75);
-  padding: 2.5rem;
-  margin: 1rem;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-.up .up__tittle {
-  margin: 2rem 0;
-  text-align: center;
-  font-size: 1rem;
-  font-weight: 900;
-}
-
 .footer {
   background-color: #00252e;
-}
-.footer .logo--blancow {
-  fill: white;
-}
-.footer .footer__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   color: white;
+  padding: 2rem 1rem;
+}
+.footer .footer__list {
+  list-style: none;
+}
+.footer .logo--blanco {
+  width: 50%;
+  margin: 2rem 0;
 }
 
 header {

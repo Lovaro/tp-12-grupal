@@ -1,11 +1,17 @@
 .footer {
   background-color: $very-dark-cyan;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: white;
+  padding: $sp2 $sp1;
 
-  .logo--blancow {
-    fill: white;
+  .footer__list {
+    list-style: none;
   }
 
-  .footer__info {
-    color: white;
+  .logo--blanco {
+    width: 50%;
+    margin: $sp2 0;
   }
 }

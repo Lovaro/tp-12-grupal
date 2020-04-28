@@ -20,4 +20,14 @@
   .card__text {
     color: $grayish-blue;
   }
+
+  &--small {
+    margin-top: -120px;
+    background-color: white;
+    color: black;
+    .card__title--small {
+      margin-bottom: $sp2;
+      font-size: 1rem;
+    }
+  }
 }
