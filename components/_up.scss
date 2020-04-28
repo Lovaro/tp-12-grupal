@@ -1,0 +1,17 @@
+.up {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px -1px rgba(0, 0, 0, 0.75);
+  padding: $sp3;
+  margin: $sp1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .up__tittle {
+    margin: $sp2 0;
+    text-align: center;
+    font-size: $sp1;
+    font-weight: 900;
+  }
+}
